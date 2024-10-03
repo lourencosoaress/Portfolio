@@ -39,9 +39,9 @@ export const PROJECTS_DATA = [
         playLink: "",
     },
     {
-        image: "./assets/images/",
-        title: "Library+",
-        description: "",
+        image: "./assets/images/Biblioteca+.png",
+        title: "Biblioteca+", 
+        description: "Biblioteca+ is a user-friendly library web page template built with React.js and styled with Tailwind CSS. Its clean design enables easy browsing of a vast book catalog. The site includes pages for book and room reservations, news, an about us section, and user login. It also features a history page, a recruitment page, a FAQ section, and an events page for updates.",
         viewLink: "https://github.com/TomasCanavilhas/BibliotecaMais",
         playLink: "",
     },
