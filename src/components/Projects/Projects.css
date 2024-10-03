@@ -1,0 +1,126 @@
+.work-container {
+    margin: 4rem;
+    position: relative;
+}
+
+.project-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.project-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+    padding: 1.2rem 1rem;
+}
+.project-container::after,
+.project-container::before {
+    content: " ";
+    width: 23.125rem;
+    height: 23.125rem;
+    border-radius: 28.125rem;
+    background: #7c667c;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.project-container::before {
+    bottom: 2rem;
+    right: 0rem;
+}
+
+.project-card {
+    background: var(--body_background);
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    padding: 1.2rem 1rem;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-title {
+    color: var(--body_color);
+    padding: 1rem 0;
+}
+
+.pro-details p {
+    padding-bottom: 1rem;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.pro-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.pro-btns .btn_check,
+.pro-btns .btn_play{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-items: center;
+    background: linear-gradient(90deg, #8e78e5 0%, #6d4be7 100%);
+    border: none;
+    cursor: pointer;
+    transform: all 0.3 ease;
+    color: white;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+}
+
+.pro-btns .btn_play {
+    background: linear-gradient(90deg, #c66bda 0%, #e761ca 100%);
+}
+
+.pro-btns .btn_check:hover {
+    color: #8e78e5;
+    background: black;
+    outline: 1.5px solid #8e78e5;
+}
+
+.pro-btns .btn_play:hover {
+    color: #c66bda;
+    background: black;
+    outline: 1.5px solid #c66bda;
+}
+
+@media (max-width: 1024px) {
+
+    .project-container {
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pro-details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .project-container {
+        max-width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .pro-details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .pro-details p {
+        font-size: 0.6rem;
+    }
+}
