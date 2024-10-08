@@ -7,11 +7,12 @@ import Projects from './components/Projects/Projects';
 function App() {
   return (
     <>
-    <Navbar />
-    <div className='container'>
-      <Hero />
-      <WorkExperience />
-      <Projects />
+     <Navbar />
+
+    <div className='app-container'>
+        <Hero/>
+        <WorkExperience/>
+        <Projects/>
     </div>
     </>
   );

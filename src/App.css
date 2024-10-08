@@ -37,14 +37,26 @@
   }
 }
 
-.container {
-  max-width: 1300px;
+.app-container {
   margin: 0 auto;
   position: relative;
 }
 
-@media (max-width: 1300px) {
-  .container {
+@media (max-width: 2561px) {
+  .app-container {
+    max-width:  2200px;
+  }
+}
+
+@media (max-width: 1441px) {
+  .app-container {
     padding: 0 1.5rem;
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 376px) {
+  .app-container {
+    padding: 0;
   }
 }

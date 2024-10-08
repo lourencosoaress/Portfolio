@@ -8,6 +8,10 @@ import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal'
 import Contact from '../Contact/Contact';
 
+import WorkExperience from '../WorkExperience/WorkExperience';
+import Projects from '../Projects/Projects';
+import Hero from '../Hero/Hero';
+
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const [hasOpen, setHasOpen] = useState(false);
@@ -96,11 +100,9 @@ const Navbar = () => {
                    {openMenu ? "close" : "menu"}
                 </span>
             </button>
-
         </div>
     </nav>
-                        
-    
+                    
     </>
   )
 }

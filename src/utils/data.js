@@ -8,7 +8,7 @@ export const WORK_EXPERIENCE = [
         ],
     },
     {
-        title: "Video Assistant / Material Supervisor @ Mediapro",
+        title: "Video Assistant / Equipment Supervisor @ Mediapro",
         date: "September 2022 - Now",
         responsabilities: [
             "Responsible for setting up equipment for TV show coverage",

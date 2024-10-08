@@ -20,7 +20,7 @@ const Hero = () => {
             <img src="./assets/images/Lourenço Soares.png"/>
         </div>
 
-        <div>
+        <div className='tech-icon-conteiner'>
             <div className='tech-icon'>
                 <img src='./assets/images/java-logo.png'/>
             </div>

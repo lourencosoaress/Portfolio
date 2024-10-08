@@ -3,6 +3,7 @@ import './MobileNavbar.css'
 import { Link } from 'react-scroll'
 import { Modal } from 'react-responsive-modal'
 import Contact from '../../Contact/Contact';
+import DarkMode from '../../DarkMode/DarkMode';
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
@@ -73,6 +74,9 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                             </Modal>
                         </li>
                     </ul>
+                    <div className='dark-mode-container'>
+                       <DarkMode/>
+                    </div>
               </div>
             </div>
         </>

@@ -26,8 +26,8 @@
     list-style: none;
     font-size: 0.8rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
     position: relative;
+    margin: 1rem;
 }
 
 .work-experience-card ul li::after {
