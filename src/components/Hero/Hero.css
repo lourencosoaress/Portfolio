@@ -81,12 +81,33 @@
     text-align: center;
     border-radius: 0.65rem;
     border: 1.5px solid #6852ba;
+    position: relative;
 }
 
 .tech-icon img {
     width: 3rem;
     height: auto;
     transition: all 0.3s ease;
+}
+
+.tech-icon::after {
+    position: absolute;
+    content: attr(data-text);
+    bottom: -40px;
+    transform: translateX(-50%), translateY(70%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.tech-icon:hover::after {
+    opacity: 1;
 }
 
 .hero-img > div > img:hover,
@@ -164,6 +185,10 @@
     .hero-container::before {
         bottom: 2rem;
         right: 0rem;
+    }
+
+    .tech-icon::after {
+        bottom: -20px;
     }
 }
 

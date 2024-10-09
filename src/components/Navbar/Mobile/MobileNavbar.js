@@ -74,9 +74,6 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                             </Modal>
                         </li>
                     </ul>
-                    <div className='dark-mode-container'>
-                       <DarkMode/>
-                    </div>
               </div>
             </div>
         </>

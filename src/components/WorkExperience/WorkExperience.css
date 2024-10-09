@@ -1,5 +1,5 @@
 .experience-container {
-    margin: 4rem;
+    margin: 4rem 3rem;
     position: relative;
 }
 
@@ -50,12 +50,14 @@
     }
 }
 
-@media (max-width: 768px) {
-    .experience-container h1 {
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-    }
+@media (max-width: 769px) {
 
+    .experience-container h1 {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        margin-left: 3.6rem;
+    }
+    
     .arrow-left {
         left: -1rem;
     }
@@ -63,11 +65,14 @@
     .arrow-right {
         right: -1rem;
     }
+
+    .experience-container {
+        margin: 4rem 1rem;
+    }
 }
 
 @media (max-width: 426px) {
     .experience-container h1 {
-        margin-top: 2rem;
-        margin-left: -3rem;
+        margin-left: 0.75rem;
     }
 }

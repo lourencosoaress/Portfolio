@@ -57,6 +57,10 @@
     opacity: 1;
 }
 
+.dark-mode-container {
+    margin: 0 4rem;
+}
+
 .menu-btn {
     width: 2.5rem;
     height: 2.5rem;
@@ -94,6 +98,13 @@
 
     .nav-content ul {
         display: none;
+    }
+
+    .dark-mode-container {
+        display: flex;
+        position: absolute;
+        left: -3rem;
+        top: 22.5%;
     }
 
     .menu-btn {

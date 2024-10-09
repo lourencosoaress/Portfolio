@@ -19,29 +19,28 @@ const Hero = () => {
         <div className='profile-img'>
             <img src="./assets/images/Lourenço Soares.png"/>
         </div>
-
         <div className='tech-icon-conteiner'>
-            <div className='tech-icon'>
-                <img src='./assets/images/java-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/html-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/css-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/react-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/js-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/git-logo.png'/>
-            </div>
-            <div className='tech-icon'>
-                <img src='./assets/images/sql-logo.png'/>
-            </div>
+        <div className='tech-icon' data-text="Java">
+    <img src='./assets/images/java-logo.png' alt='Java'/>
+</div>
+<div className='tech-icon' data-text="HTML">
+    <img src='./assets/images/html-logo.png' alt='HTML'/>
+</div>
+<div className='tech-icon' data-text="CSS">
+    <img src='./assets/images/css-logo.png' alt='CSS'/>
+</div>
+<div className='tech-icon' data-text="React">
+    <img src='./assets/images/react-logo.png' alt='React'/>
+</div>
+<div className='tech-icon' data-text="JavaScript">
+    <img src='./assets/images/js-logo.png' alt='JavaScript'/>
+</div>
+<div className='tech-icon' data-text="Git">
+    <img src='./assets/images/git-logo.png' alt='Git'/>
+</div>
+<div className='tech-icon' data-text="SQL">
+    <img src='./assets/images/sql-logo.png' alt='SQL'/>
+</div>
         </div>
       </div>
     </section>

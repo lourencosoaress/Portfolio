@@ -87,10 +87,11 @@ const Navbar = () => {
                       <Contact />
                     </Modal>
                 </li>
-                <li>
-                    <DarkMode />
-                </li>
             </ul>
+
+            <div className='dark-mode-container'>
+                <DarkMode />
+            </div>
 
             <button class='menu-btn' onClick={toggleMenu}>
                 <span
