@@ -243,14 +243,13 @@
 .custom-btn {
     display: flex;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: var(--body_color);
     border-radius: 0.65rem;;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    color: black;
+    color: var(--body_background);
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
@@ -264,9 +263,17 @@ a.download-btn {
 .custom-btn:hover {
     background-color: #d3d3d3;
 }
+
+body[data-theme="light"] .custom-btn:hover {
+    background-color: #3a3a3a;
+}
   
 .custom-btn .icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+body[data-theme="light"] .custom-btn .icon {
+    filter: invert(100%);
 }

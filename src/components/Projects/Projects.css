@@ -90,7 +90,7 @@
 
 .pro-btns .btn_check:hover {
     color: #8e78e5;
-    background: black;
+    background: var(--body_background);
     outline: 1.5px solid #8e78e5;
 }
 

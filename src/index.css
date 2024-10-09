@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.body[data-theme="light"] {
+body[data-theme="light"] {
   --body_background: white;
   --body_color: black;
   --link_color: navy;
