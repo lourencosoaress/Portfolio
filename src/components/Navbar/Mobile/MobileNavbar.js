@@ -3,7 +3,6 @@ import './MobileNavbar.css'
 import { Link } from 'react-scroll'
 import { Modal } from 'react-responsive-modal'
 import Contact from '../../Contact/Contact';
-import DarkMode from '../../DarkMode/DarkMode';
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
