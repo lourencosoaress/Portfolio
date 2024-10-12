@@ -5,6 +5,7 @@ import MobileNavbar from './Mobile/MobileNavbar';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import Contact from '../Contact/Contact';
+
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
