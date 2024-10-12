@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './MobileNavbar.css'
 import { Link } from 'react-scroll'
 import { Modal } from 'react-responsive-modal'
 import Contact from '../../Contact/Contact';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
     const [hasOpen, setHasOpen] = useState(false);
+    const location = useLocation();
 
     const onButtonClick = () => {
         setHasOpen(true);
@@ -15,6 +17,16 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
     const onCloseModal = () => {
         setHasOpen(false);
     };
+
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+            const element = document.getElementById(hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [location]);
 
   return (
     <>
@@ -25,26 +37,14 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                     <img className='logo' src='./images/logo.svg' alt="" />
 
                     <ul>
-                        <li>
-                        <Link to='home' spy={true}
-                                                  smooth={true}
-                                                  offset={0}
-                                                  duration={500}>
-                            <a className='menu-item'>Home</a> </Link>
-                        </li>
-                        <li> 
-                        <Link to='work-experience' spy={true}
-                                                  smooth={true}
-                                                  offset={-50}
-                                                  duration={500}>
-                            <a className='menu-item'>Work Experience</a> </Link>
+                    <li>
+                            <RouterLink to="/#home" className='menu-item'>Home</RouterLink>
                         </li>
                         <li>
-                        <Link to='projects' spy={true}
-                                                  smooth={true}
-                                                  offset={-50}
-                                                  duration={500}>
-                            <a className='menu-item'>Projects</a></Link>
+                            <RouterLink to="/#work-experience" className='menu-item'>Work Experience</RouterLink>
+                        </li>
+                        <li>
+                            <RouterLink to="/#projects" className='menu-item'>Projects</RouterLink>
                         </li>
                         <li>
                             <a className='menu-item' onClick={onButtonClick}>

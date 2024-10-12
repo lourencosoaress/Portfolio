@@ -37,6 +37,10 @@
     cursor: pointer;
 }
 
+.menu-item:visited {
+    color: var(--body_color);
+}
+
 .menu-item::before {
     content: " ";
     width: 2rem;
@@ -70,7 +74,7 @@
     border: none;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    background: rgba(103, 81, 185, 0.7);
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;

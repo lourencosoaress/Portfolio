@@ -15,6 +15,7 @@ const Projects = () => {
                   key={ind}
                   image={val.image}
                   title={val.title}
+                  techs={val.techs}
                   description={val.description}
                   viewLink={val.viewLink}
                   playLink={val.playLink}

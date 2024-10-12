@@ -57,6 +57,32 @@
     padding: 1rem 0;
 }
 
+.pro-techs-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro-techs-list {
+    margin: 0 2px;
+}
+
+.pro-techs-list li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 10px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .pro-details p {
     padding-bottom: 1rem;
     font-size: 0.9rem;
@@ -75,7 +101,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     align-items: center;
-    background: linear-gradient(90deg, #8e78e5 0%, #6d4be7 100%);
+    background:  rgba(103, 81, 185, 0.5);
     border: none;
     cursor: pointer;
     transform: all 0.3 ease;
@@ -96,7 +122,7 @@
 
 .pro-btns .btn_play:hover {
     color: #c66bda;
-    background: black;
+    background: var(--body_background);
     outline: 1.5px solid #c66bda;
 }
 
@@ -143,6 +169,10 @@
     .work-container .project-heading {
         margin: 1rem;
     }
+
+    .pro-techs-list li {
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 426px) {
@@ -157,5 +187,9 @@
         height: 15.125rem;
         border-radius: 15.125rem;
         filter: blur(105px);
+    }
+
+    .project-title {
+        padding-bottom: 0.3rem;
     }
 }
