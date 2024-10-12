@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './MobileNavbar.css'
-import { Link } from 'react-scroll'
 import { Modal } from 'react-responsive-modal'
 import Contact from '../../Contact/Contact';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
@@ -47,9 +46,9 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
                             <RouterLink to="/#projects" className='menu-item'>Projects</RouterLink>
                         </li>
                         <li>
-                            <a className='menu-item' onClick={onButtonClick}>
+                            <span className='menu-item' onClick={onButtonClick}>
                                 Contact Me
-                            </a>
+                            </span>
                             <Modal 
                             open={hasOpen} 
                             onClose={onCloseModal} 

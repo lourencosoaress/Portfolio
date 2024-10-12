@@ -17,7 +17,7 @@ const Hero = () => {
 
   <div className='hero-img'>
     <div className='profile-img'>
-        <img src="./assets/images/Lourenço Soares.png"/>
+        <img src="./assets/images/Lourenço Soares.png" alt=''/>
     </div>
     <div className='tech-icon-conteiner'>
     <div className='tech-icon' data-text="Java">

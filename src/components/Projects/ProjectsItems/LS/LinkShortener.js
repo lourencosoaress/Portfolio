@@ -8,9 +8,9 @@ const LinkShortener = () => {
         <div className='ls-container'>
             <h2 className='ls-title'>
                 L
-                <img className='link-img' src='./assets/images/link-icon.png' />
+                <img className='link-img' src='./assets/images/link-icon.png' alt=''/>
                 NK SH
-                <img className='external-link-img' src='./assets/images/external-link-icon.png' />
+                <img className='external-link-img' src='./assets/images/external-link-icon.png' alt=''/>
                 RTENER
             </h2>
 
@@ -21,7 +21,7 @@ const LinkShortener = () => {
 
                 <button className='submit-button'>
                     Shorten Link
-                    <img className='submit-button-img' src='./assets/images/link-icon.png' />
+                    <img className='submit-button-img' src='./assets/images/link-icon.png' alt=''/>
                 </button>
             </div>
         </div>

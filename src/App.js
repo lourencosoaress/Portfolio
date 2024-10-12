@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import WorkExperience from './components/WorkExperience/WorkExperience';
 import Projects from './components/Projects/Projects';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import LinkShortener from './components/Projects/ProjectsItems/LS/LinkShortener';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <Navbar />
 
     <Routes>
-      <Route exact path='/' element={
+      <Route exact path='/' element= {
         <div className='app-container'>
           <Hero/>
           <WorkExperience/>
