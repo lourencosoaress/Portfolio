@@ -175,7 +175,7 @@
         width: 18rem;
         height: 18rem;
         position: absolute;
-        filter: blur(135px);
+        filter: blur(165px);
     }
 
     .hero-container::after {
