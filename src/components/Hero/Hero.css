@@ -175,15 +175,16 @@
         width: 18rem;
         height: 18rem;
         position: absolute;
+        filter: blur(135px);
     }
 
     .hero-container::after {
-        top: 0rem;
+        top: -1rem;
         left: 0rem;
     }
 
     .hero-container::before {
-        bottom: 2rem;
+        bottom: -5rem;
         right: 0rem;
     }
 

@@ -9,7 +9,8 @@ const LinkShortener = () => {
             <h2 className='ls-title'>
                 L
                 <img className='link-img' src='./assets/images/link-icon.png' alt=''/>
-                NK SH
+                NK  
+                SH
                 <img className='external-link-img' src='./assets/images/external-link-icon.png' alt=''/>
                 RTENER
             </h2>
