@@ -114,14 +114,15 @@ body[data-theme="dark"] .external-link-img {
 }
 
 @media screen and (max-width: 426px) {
+
     .ls-wrapper::after,
     .ls-wrapper::before {
         content: " ";
-        width: 15.125rem;
-        height: 15.125rem;
-        border-radius: 15.125rem;
-        filter: blur(105px);
-    }
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
+        filter: blur(165px);
+}
 
     .ls-title {
         font-size: 2.2rem;

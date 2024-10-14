@@ -10,7 +10,7 @@
     opacity: 0;
     box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    transform: translateX(-100vw);
+    transform: translateX(-100vw);;
 }
 
 .mobile-menu-container {
@@ -36,13 +36,17 @@
     list-style: none;
 }
 
+.menu-item:visited {
+    color: white;
+}
+
+.mobile-menu ul > li {
+    color: white;
+}
+
 @media (max-width: 769px) {
     .mobile-menu {
         display: block;
-    }
-
-    .menu-item {
-        color: white;
     }
 }
 
