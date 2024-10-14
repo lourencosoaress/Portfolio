@@ -14,14 +14,14 @@
     position: absolute;
 }
 
-.ls-wrapper::after {
+.ls-wrapper::before {
     top: -3rem;
     left: -5rem;
 }
 
-.ls-wrapper::before {
-    bottom: 2rem;
-    right: 0rem;
+.ls-wrapper::after {
+    bottom: -30rem;
+    right: -2rem;
 }
 
 .ls-container {
