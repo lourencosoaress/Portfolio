@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <div>
                 <div className='project-card'>
                     <img src={props.image} alt='image'/>
-                    <h2 className='project-title'>{props.title}</h2>
+                    <h2 className='project-title'>{props.title || 'Untitled Project'}</h2>
                     <div className='pro-details'>
                         <ul className='pro-techs-container'>
                             <li className='pro-techs-list'>
@@ -16,11 +16,13 @@ const ProjectCard = (props) => {
                             </li>
                         </ul>
 
-                        <p>{props.description}</p>
+                        <p>{props.description || 'No description available'}</p>
                         <div className='pro-btns'>
-                            <a href={props.viewLink} target='_blank' rel='noopener noreferrer'>
+                           {props.viewLink && (
+                              <a href={props.viewLink} target='_blank' rel='noopener noreferrer'>
                                 <button className='btn_check'>Check Code</button>
-                            </a>
+                              </a>
+                            )}
 
                             {props.playLink && (
                                 <a href={props.playLink}>

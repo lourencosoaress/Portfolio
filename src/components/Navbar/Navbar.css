@@ -37,10 +37,6 @@
     cursor: pointer;
 }
 
-.menu-item:visited {
-    color: var(--body_color);
-}
-
 .menu-item::before {
     content: " ";
     width: 2rem;

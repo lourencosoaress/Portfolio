@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects';
 
 import { Routes, Route } from "react-router-dom";
 import LinkShortener from './components/Projects/ProjectsItems/LS/LinkShortener';
+import BookingSimulator from './components/Projects/ProjectsItems/BS/BookingSimulator';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       }/>
 
       <Route path='/link-shortener' element={<LinkShortener/>}/>
+      <Route path='/booking-simulator' element={<BookingSimulator/>}/>
     </Routes>
     
     </>

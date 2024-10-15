@@ -81,5 +81,15 @@ export const PROJECTS_DATA = [
         description: "",
         viewLink: "",
         playLink: "link-shortener",
+    },
+    {
+        image: "",
+        title: "Booking Simulator",
+        techs: [
+            "Java Script",
+        ],
+        description: "",
+        viewLink: "",
+        playLink: "booking-simulator",
     }
 ]

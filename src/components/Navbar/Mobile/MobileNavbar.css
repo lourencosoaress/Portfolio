@@ -37,11 +37,12 @@
 }
 
 .menu-item:visited {
-    color: white;
+    color: var(--body_color);
 }
 
-.mobile-menu ul > li {
+.mobile-menu-item {
     color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 769px) {

@@ -37,16 +37,16 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
 
                     <ul>
                     <li>
-                            <RouterLink to="/#home" className='menu-item'>Home</RouterLink>
+                            <RouterLink to="/#home" className='mobile-menu-item'>Home</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/#work-experience" className='menu-item'>Work Experience</RouterLink>
+                            <RouterLink to="/#work-experience" className='mobile-menu-item'>Work Experience</RouterLink>
                         </li>
                         <li>
-                            <RouterLink to="/#projects" className='menu-item'>Projects</RouterLink>
+                            <RouterLink to="/#projects" className='mobile-menu-item'>Projects</RouterLink>
                         </li>
                         <li>
-                            <span className='menu-item' onClick={onButtonClick}>
+                            <span className='mobile-menu-item' onClick={onButtonClick}>
                                 Contact Me
                             </span>
                             <Modal 
