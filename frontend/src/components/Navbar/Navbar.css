@@ -35,6 +35,13 @@
     font-weight: 500;
     position: relative;
     cursor: pointer;
+    color: inherit;
+}
+
+.menu-item:visited,
+.menu-item:link,
+.menu-item:active {
+    color: inherit;
 }
 
 .menu-item::before {
